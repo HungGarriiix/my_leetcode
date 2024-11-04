@@ -49,25 +49,26 @@ This block of code will indicate that **the duplicate** is found, thus returning
 ![speed](./speed.PNG "Time complexity")
 > Given `n` is the total number of elements in input `nums`.
 
-**Total:** O(n^2).
+**Total:** O(n<sup>2</sup>).
 
 **Explanation:**
 - Running through the source array `nums`: ***O(n)***. `(1)`
 - Running through tracing list `finding_num` (`finding_num.Contains(num)`): ***O(m)***. 
 Worst case: no element found => running through the entire list => **m = n** => ***O(m) = O(n)***. `(2)`
 
-**Conclusion:** `(2)` inside loop `(1)` => `(1)` x `(2)` = ***O(n^2)***
+**Conclusion:** `(2)` inside loop `(1)` => `(1)` x `(2)` = ***O(n<sup>2</sup>)***
 
 ### Space complexity
 
 ![memory](./memory.PNG "Space complexity")
 > Given `n` is the total number of elements in input `nums`.
 
-**Total:** O(n^2)
+**Total:** O(n).
 
 **Explanation:**
 - Input array `nums`: ***O(1)*** (constant). `(1)`
 - Tracing list `finding_num`: *O(m)*. 
-Worst case: no element found => running through entire `finding_num`: **m = n** => ***O(m) = O(n)***. `(2)`
+
+==Worst case:== no element found => running through entire `finding_num`: **m = n** => ***O(m) = O(n)***. `(2)`
 
 **Conclusion:** `(1)` + `(2)` = *O(1) + O(n)* = ***O(n)***
